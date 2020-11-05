@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gali khalo</title>
+  </head>
+
+  <body style="text-align: center;" onload="loadf()">
+    <br><br><br>
+    <button style="border-radius: 20px;" onclick="lis()">Dba na <span id="fir"></span></button>
+    <h2 id="fir1"></h2>
+    <br><br><br><br><br><br><br>
+    <button id="lis1" onclick="lis1()" style="display: none; margin: auto; border-radius: 20px;">Ab mtlb ni aata to yha dabba</button>
+    <h2 id="twoli"><span id="sec"></span><br><span id = "sec1"></span></h2>
+  </body>
+
+  <script type="text/javascript">
+    var gali = ["Maderchod", "Bhosadike", "Bhen chod", "Beti chod", "Bhadhava", "Chodu", "Chutiya", "Gaand", "Gaandu", "Gadha, Bakland", "Lauda, Lund", "Hijra", "Kuttiya", "Paad", "Randi", "Saala kutta", "Saali kutti", "Tatti", "Kamina", "Chut ke pasine mein talay huye bhajiye", "Chut ke dhakkan", "Chut ke gulam", "Chutiya ka bheja ghas khane gaya hai", "Choot marani ka", "Choot ka baal", "Chipkali ke jhaat ke baal", "Chipkali ke jhaat ke paseene", "Chipkali ke gaand ke pasine", "Chipkali ke chut ke pasine", "Chipkali ki bhigi chut", "Chinaal ke gadde ke nipple ke baal ke joon", "Chullu bhar muth mein doob mar", "Cuntmama", "Chhed", "Apni gaand mein muthi daal", "Apni lund choos", "Apni ma ko ja choos", "Bhen ke laude", "Bhen ke takke", "Abla naari tera buble bhaari", "Bhonsri Waalaa", "Bhadwe ka awlat", "Bhains ki aulad", "Buddha Khoosat", "Bol teri gand kaise maru", "Bur ki chatani", "Chunni", "Chinaal", "Chudai khana", "Chudan chuda", "Chut ka pujari", "Chut ka bhoot", "Gaand ka makhan", "Gaand main lassan", "Gaand main danda", "Gaand main keera", "Gaand mein bambu", "Gaandfat", "Pote kitne bhi bade ho, lund ke niche hi rehte hai", "Hazaar lund teri gaand main", "Jhat ke baal", "Jhaant ke pissu", "Kadak Mall", "Kali Choot Ke Safaid Jhaat", "Khotey ki aulda", "Kutte ka awlat", "Kutte ki jat", "Kutte ke tatte", "Kutte ke poot, teri maa ki choot", "Lavde ke bal", "Lund Chus", "Lund Ke Pasine", "Meri Gand Ka Khatmal", "Moot, Mootna", "Najayaz paidaish", "Rundi khana", "Sadi hui gaand", "Teri gaand main kute ka lund", "Teri maa ka bhosda", "Teri maa ki chut", "Tere gaand mein keede paday", "Ullu ke pathe"];
+
+    var mean = ["MOTHERFUCKER", "BORN FROM A ROTTEN PUSSY", "Sister fucker", "Daughter fucker", "Pimp", "Fucker", "Fucker, bastard", "ASS", "Asshole", "Idiot", "Penis, dick, cock", "Gay, Transsexual", "Bitch", "FART", "HOOKER", "Bloody dog", "Bloody bitch", "Shit", "bastard", "Snack fried in pussy sweat", "Pussy lid", "Pussy whipped", "idiot’s brain has gone to eat grass", "Pussy whipped", "Hair of vagina", "Lizard’s cunt hairs", "Sweat of Lizard’s pubic hair", "Sweat of a lizard’s ass", "Sweat of reptiles cunt", "Wet pussy of a wall lizard", "Prostitute’s breast’s nipple’s hair’s lice", "Drown yourself in a handful of semen", "Vaginal uncle", "Vagina,Hole", "Put your fist up your ass", "Go and suck your own dick", "Go suck your mom", "Sister’s dick", "Go and suck your sister’s balls", "woman, your tits are huge", "You fucker", "Son of a pimp", "Son of a buffalo", "Old fart", "let me know how to fuck you in the ass", "Ketchup of cunt", "Clit", "Whore", "Whore house", "Fucking games", "pussy worshipper", "Vaginal Ghost", "Butter from the ass", "Garlic in ass", "Stick in ass", "Bug up your ass", "A bambooup your ass", "Busted ass", "However big the balls might be, they have to stay beneath the penis", "Thousand dicks in your ass", "Pubic hair", "Bug of pubic hair", "Sexy Girl", "White hair of a black pussy", "Son of donkey", "Son of a dog", "Breed of dog", "Dog’s balls", "Son of a dog, your mother’s pussy", "Hair on your penis", "Suck dick", "Sweat of dick", "Bug of my Ass", "Piss off", "Illegitimately born", "whore house", "Stinking ass", "A dog’s dick in your ass", "Your mother’s breasts", "Your mother’s pussy", "May worms infest your asshole", "Idiot"];
+
+    var a;
+
+    function loadf() {
+      document.getElementById('fir').innerHTML = gali[Math.floor(Math.random() * 82)];
+    }
+    function lis(){
+      a = Math.floor(Math.random() * 82);
+      document.getElementById('lis1').style.display = "block";
+      document.getElementById('twoli').style.display = "none";
+      document.getElementById('fir1').innerHTML = gali[a] + " kyu dabaya";
+      var x = Math.floor(Math.random() * 256);
+      var y = Math.floor(Math.random() * 256);
+      var z = Math.floor(Math.random() * 256);
+      var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+      x = 256 - x;
+      y = 256 - y;
+      z = 256 - z;
+      var txtColor = "rgb(" + x + "," + y + "," + z + ")";
+      document.body.style.background = bgColor;
+      document.body.style.color = txtColor;
+    }
+    function lis1() {
+      document.getElementById('twoli').style.display = "block";
+      document.getElementById('sec').innerHTML = mean[a];
+      document.getElementById('sec1').innerHTML = "bhai kya smj kar dabaye ja rha h, alag hi " + gali[Math.floor(Math.random() * 82)];
+    }
+  </script>
+</html>
